@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) => {
+
   // event delegation logic
   document.body.addEventListener('click', function(event) {
     if (event.target.dataset.action === 'create-new-task') {
@@ -16,4 +17,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       handleDeleteList(event)
     }
   })
+
+  init();
+
 });
